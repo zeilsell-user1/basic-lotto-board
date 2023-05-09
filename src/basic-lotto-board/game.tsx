@@ -27,7 +27,7 @@ export const Game = ({ onFinish }: GameProps): JSX.Element => {
   for (let i = 1; i <= 7; i++) {
     const row: JSX.Element[] = [];
     for (let j = 1; j <= 7; j++) {
-      const number = (i - 1) * 7 + j;
+      const number = ((i - 1) * 7) + j;
       const disabled =
         selectedDucks.length === 6 && !selectedDucks.includes(number);
       row.push(
